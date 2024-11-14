@@ -2,9 +2,30 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ім'я Прізвище">
-    <title>Списки інформації</title>
+    <title>Інформація про фірму</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4b3c2;
+            color: #333;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -36,6 +57,67 @@
                 <dt>Маска</dt>
                 <dd title="Термін маска">Косметичний засіб для догляду за волоссям або обличчям.</dd>
             </dl>
+        </section>
+
+        <section class="product-table">
+            <table>
+                <caption>Наша Колекція Косметики</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Назва продукту</th>
+                        <th rowspan="2">Категорія</th>
+                        <th colspan="3">Ціна (USD)</th>
+                        <th rowspan="2">В наявності</th>
+                    </tr>
+                    <tr>
+                        <th>Малий</th>
+                        <th>Середній</th>
+                        <th>Великий</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Квіткова помада</td>
+                        <td>Макіяж</td>
+                        <td>5.99</td>
+                        <td>9.99</td>
+                        <td>14.99</td>
+                        <td>Так</td>
+                    </tr>
+                    <tr>
+                        <td>Натуральний крем для обличчя</td>
+                        <td>Догляд за шкірою</td>
+                        <td>12.50</td>
+                        <td>18.00</td>
+                        <td>25.00</td>
+                        <td>Ні</td>
+                    </tr>
+                    <tr>
+                        <td>Трав'яний шампунь</td>
+                        <td>Догляд за волоссям</td>
+                        <td>7.50</td>
+                        <td>11.99</td>
+                        <td>15.50</td>
+                        <td>Так</td>
+                    </tr>
+                    <tr>
+                        <td>Заспокійливий лосьйон для тіла</td>
+                        <td>Догляд за шкірою</td>
+                        <td>8.99</td>
+                        <td>14.50</td>
+                        <td>19.99</td>
+                        <td>Так</td>
+                    </tr>
+                    <tr>
+                        <td>Парфумований спрей для тіла</td>
+                        <td>Парфуми</td>
+                        <td>6.00</td>
+                        <td>10.00</td>
+                        <td>15.00</td>
+                        <td>Ні</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </div>
     <footer class="author-info">
