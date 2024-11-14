@@ -1,0 +1,162 @@
+/* Загальні стилі для всіх сторінок */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Селектори класів */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Універсальні селектори */
+* {
+  box-sizing: border-box;
+}
+
+/* Селектори сусідів */
+h1 + p {
+  color: #555;
+}
+
+/* Селектори дітей */
+.container > .section {
+  margin-bottom: 20px;
+}
+
+/* Селектори атрибутів */
+a[target] {
+  color: blue;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+}
+
+/* Псевдокласи */
+a:link {
+  color: #00f;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:hover {
+  color: #f00;
+}
+
+a:active {
+  color: #0f0;
+}
+
+section:first-child {
+  border-top: 2px solid #333;
+}
+
+section:last-child {
+  border-bottom: 2px solid #333;
+}
+
+section:empty {
+  display: none;
+}
+
+input:checked + label {
+  font-weight: bold;
+}
+
+p:not(.intro) {
+  color: #666;
+}
+
+/* Псевдоелементи */
+p::first-line {
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 2em;
+  color: #f00;
+}
+
+/* Границі, заповнювачі і рамки */
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.container p {
+  padding-top: 10px;
+  padding-right: 15px;
+  border-left-width: thin;
+  border-left-style: dashed;
+}
+
+/* Позиціювання елементів */
+.container {
+  display: table-cell;
+  position: relative;
+  z-index: auto;
+}
+
+.image {
+  float: left;
+  margin-right: 20px;
+}
+
+/* Візуалізація елементів */
+.container {
+  max-width: 1200px;
+  min-height: 400px;
+}
+
+.image {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.text {
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+/* Колір фон */
+.header {
+  background-color: #333;
+  color: #fff;
+}
+
+.content {
+  background-image: url('background.jpg');
+  background-attachment: scroll;
+  background-position: top center;
+}
+
+/* Меню стилі */
+.menu a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  margin: 5px 0;
+}
