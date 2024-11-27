@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Введення інформації про товари</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans Unicode', 'Times', Geneva, Tahoma, cursive;
+            text-align: right;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .form-container label {
+            font-weight: 500;
+        }
+        .form-container input,
+        .form-container textarea,
+        .form-container select {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Введення інформації про товари</h1>
+        <form action="#" dir="ltr" id="productForm" enctype="multipart/form-data" novalidate>
+            <fieldset>
+                <legend id="productDetails" class="form-legend" title="Деталі продукту">Деталі продукту</legend>
+                <label for="productName" class="form-label">Назва продукту:</label>
+                <input type="text" id="productName" name="productName" title="Введіть назву продукту" required>
+
+                <label for="productCategory" class="form-label">Категорія продукту:</label>
+                <select id="productCategory" name="productCategory" title="Оберіть категорію" required>
+                    <option value="makeup">Макіяж</option>
+                    <option value="skincare">Догляд за шкірою</option>
+                    <option value="haircare">Догляд за волоссям</option>
+                    <option value="fragrance">Парфуми</option>
+                </select>
+
+                <label for="productDescription" class="form-label">Опис продукту:</label>
+                <textarea id="productDescription" name="productDescription" placeholder="Введіть опис продукту" wrap="soft" required></textarea>
+
+                <label for="productPrice" class="form-label">Ціна продукту:</label>
+                <input type="number" id="productPrice" name="productPrice" title="Введіть ціну продукту" step="0.01" required>
+
+                <label for="productAvailable" class="form-label">В наявності:</label>
+                <input type="checkbox" id="productAvailable" name="productAvailable" title="Чи є продукт в наявності">
+
+                <label for="productImage" class="form-label">Завантажити зображення продукту:</label>
+                <input type="file" id="productImage" name="productImage" title="Завантажте зображення продукту" accept="image/*" required>
+
+                <button type="submit" autofocus formenctype="multipart/form-data" formtarget="_self">Відправити інформацію</button>
+                <button type="reset" formenctype="application/x-www-form-urlencoded">Скинути форму</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
